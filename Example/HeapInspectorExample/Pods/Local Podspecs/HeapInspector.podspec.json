@@ -1,12 +1,12 @@
 {
   "name": "HeapInspector",
-  "version": "0.0.11",
+  "version": "1.0",
   "license": {
     "type": "MIT",
     "file": "LICENSE.md"
   },
   "summary": "Find memory issues & leaks in your iOS app without instruments",
-  "description": "HeapInspector is an iOS debug tool that **monitors and snapshots the memory heap** in your iOS app. With HeapInspector you can discover memory leaks, no longer needed living objects and more issues directly on your device without ever starting Instruments.",
+  "description": "HeapInspector is a debug tool that **monitors the memory heap** with backtrace recording in your iOS app. You can discover memory leaks, no longer used objects, abandoned memory and more issues directly on your device without ever starting Instruments.",
   "homepage": "https://github.com/tapwork/HeapInspector",
   "social_media_url": "https://twitter.com/cmenschel",
   "authors": {
@@ -14,19 +14,19 @@
   },
   "source": {
     "git": "https://github.com/tapwork/HeapInspector.git",
-    "tag": "0.0.11"
+    "tag": "1.0"
   },
   "platforms": {
-    "ios": "5.0"
+    "ios": "8.0"
   },
-  "source_files": "HeapInspector/**.{h,m}",
-  "exclude_files": "HeapInspector/NSObject+HeapInspector.{h,m}",
+  "source_files": "src/**.{h,m}",
+  "exclude_files": "src/NSObject+HeapInspector.{h,m}",
   "requires_arc": true,
   "subspecs": [
     {
       "name": "no-arc",
       "requires_arc": false,
-      "source_files": "HeapInspector/NSObject+HeapInspector.{h,m}"
+      "source_files": "src/NSObject+HeapInspector.{h,m}"
     }
   ]
 }

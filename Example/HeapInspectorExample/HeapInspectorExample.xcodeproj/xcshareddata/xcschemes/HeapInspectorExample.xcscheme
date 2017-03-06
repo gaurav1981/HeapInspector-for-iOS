@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0810"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -35,6 +35,16 @@
                BlueprintIdentifier = "DA29C55419A530C400FFF7D5"
                BuildableName = "HeapInspectorExampleTests.xctest"
                BlueprintName = "HeapInspectorExampleTests"
+               ReferencedContainer = "container:HeapInspectorExample.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DA99091F1C9000B200F70573"
+               BuildableName = "SwiftExampleTests.xctest"
+               BlueprintName = "SwiftExampleTests"
                ReferencedContainer = "container:HeapInspectorExample.xcodeproj">
             </BuildableReference>
          </TestableReference>
